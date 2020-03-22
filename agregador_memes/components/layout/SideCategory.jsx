@@ -9,7 +9,7 @@ class SideBar extends React.Component {
     return (
       <div className="side-category">
         <div className="side-text">
-          <p>Categorías</p>
+          <p>Categories</p>
         </div>
       </div>
     );

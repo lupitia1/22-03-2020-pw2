@@ -1,10 +1,13 @@
-const { React, ReactDOM, Header,
-  SideBar, MemeForm, MemeView, MemesList } = window;
 const {
-  BrowserRouter: Router,
-  Switch,
-  Route
-} = window.ReactRouterDOM;
+  React,
+  ReactDOM,
+  Header,
+  SideBar,
+  MemeForm,
+  MemeView,
+  MemesList
+} = window;
+const { BrowserRouter: Router, Switch, Route } = window.ReactRouterDOM;
 
 class Index extends React.Component {
   constructor(props) {
@@ -18,13 +21,13 @@ class Index extends React.Component {
           <SideBar />
           <div className="child-flex">
             <Header />
-            <Switch>
-              <div className={"content"}>
-                {/* <Route path="/meme-view" component={MemeView} />
-                <Route path="/meme-form" component={MemeForm} />
-                <Route path="/" component={MemesList} /> */}
-              </div>
-            </Switch>
+            <div className="content">
+              <Switch>
+                <Route exact path="/meme-view" component={MemeView} />
+                <Route exact path="/meme-form" component={MemeForm} />
+                <Route exact path="/" component={MemesList} />
+              </Switch>
+            </div>
           </div>
         </div>
       </Router>

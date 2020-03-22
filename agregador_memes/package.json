@@ -4,7 +4,8 @@
   "description": "Realiza cambios únicamente dentro de la carpeta creada para el proyecto en el que estés trabajando.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "hacelobonito": "npx prettier --write index.jsx src/** components/**  "
   },
   "repository": {
     "type": "git",
