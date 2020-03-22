@@ -1,22 +1,32 @@
-const { React, ReactDOM } = window;
-const { BrowserRouter: Router, Link, Switch, withRouter, Route } = window.ReactRouterDOM;
+const { React, ReactDOM, Header,
+  SideBar, MemeForm, MemeView, MemesList } = window;
+const {
+  BrowserRouter: Router,
+  Switch,
+  Route
+} = window.ReactRouterDOM;
 
 class Index extends React.Component {
   constructor(props) {
     super(props);
-
   }
 
   render() {
     return (
       <Router>
-        <Header />
-        <SideBar />
-          <Switch className={"body-content wallpaper"}>
-            <Route path="/meme-view" component={withRouter(MemeView)}/>
-            <Route path="/meme-form" component={withRouter(MemeForm)}/>
-            <Route path="/" component={withRouter(MemesList)}/>
-          </Switch>
+        <div className="master-flex">
+          <SideBar />
+          <div className="child-flex">
+            <Header />
+            <Switch>
+              <div className={"content"}>
+                {/* <Route path="/meme-view" component={MemeView} />
+                <Route path="/meme-form" component={MemeForm} />
+                <Route path="/" component={MemesList} /> */}
+              </div>
+            </Switch>
+          </div>
+        </div>
       </Router>
     );
   }

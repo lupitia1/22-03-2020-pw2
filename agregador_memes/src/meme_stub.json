@@ -1,0 +1,10 @@
+{
+    "memes-list": [
+      {"id": 1, "url":"https://img-9gag-fun.9cache.com/photo/ad5zOd9_700bwp.webp"},
+      {"id": 2, "url":"https://img-9gag-fun.9cache.com/photo/aEg4MwK_460swp.webp"},
+      {"id": 3,"url":"https://img-9gag-fun.9cache.com/photo/a5RYQWV_460swp.webp"},
+      {"id": 4, "url":"https://img-9gag-fun.9cache.com/photo/aBgeLBx_700bwp.webp"}
+    ],
+       
+    "daily-meme": {"id":27, "url":"https://img-9gag-fun.9cache.com/photo/aMYLmAA_460swp.webp"}
+}

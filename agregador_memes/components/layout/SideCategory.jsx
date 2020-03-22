@@ -3,9 +3,7 @@ const { React, ReactDOM } = window;
 class SideBar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { userName: "", email: "", isSubmitting: false };
   }
-
 
   render() {
     return (
@@ -16,5 +14,4 @@ class SideBar extends React.Component {
       </div>
     );
   }
-
 }

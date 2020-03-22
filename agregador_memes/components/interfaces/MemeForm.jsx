@@ -7,9 +7,6 @@ class MemeForm extends React.Component {
   }
 
   render() {
-    return (
-      <h1>Meme Form</h1>
-    );
+    return <h1>Meme Form</h1>;
   }
-
 }
